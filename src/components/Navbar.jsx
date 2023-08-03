@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/logo1.png';
+import Logo from '../assets/AT.png';
 import {FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi'; 
 import {BsFillPersonLinesFill} from 'react-icons/bs';
@@ -11,7 +11,7 @@ const handleClick = () =>{
 }
 
     return (
-        <div className='fixed w-full h-[80px] flex px-5 justify-between items-center bg-black text-white'>
+        <div className='fixed w-full h-[80px] flex px-5 justify-between items-center bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white'>
         
         <div>
         <img src={Logo} alt="logo-img" style={{width: '50px'}}/>

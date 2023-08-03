@@ -3,7 +3,7 @@ import { HiArrowRight } from 'react-icons/hi';
 
 function Hero() {
     return (
-        <div name='home' className='bg-black w-full h-screen'>
+        <div name='home' className='bg-gradient-to-r from-gray-700 via-gray-900 to-black w-full h-screen'>
             <div className='flex flex-col justify-center h-full text-white max-w-[1000px] px-32 mx-auto'>
                 <p className="text-gray-200 lg:text-xl dark:text-gray-400">Hi my name is</p>
                 <h1 className='text-4xl sm:text-7xl font-bold'> <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Ashok Thota</span></h1>
