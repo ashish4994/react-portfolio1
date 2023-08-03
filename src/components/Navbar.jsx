@@ -3,6 +3,7 @@ import Logo from '../assets/AT.png';
 import {FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi'; 
 import {BsFillPersonLinesFill} from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 function Navbar() {
 const [nav,setNav] = useState(false);
@@ -18,11 +19,11 @@ const handleClick = () =>{
         </div>
 
             <ul className='hidden md:flex gap-4'>
-                <li><a href="#" className='cursor:pointer hover:bg-blue-400 p-3 delay-150'>Home</a></li>
-                <li><a href="#" className='cursor:pointer hover:bg-blue-400 p-3 delay-150'>About</a></li>
-                <li><a href="#" className='cursor:pointer'>Experience</a></li>
-                <li><a href="#" className='cursor:pointer'>Work</a></li>
-                <li><a href="#" className='cursor:pointer'>Contact</a></li>
+                <li><Link to='home' smooth={true} duration={500}> Home </Link></li>
+                <li><Link to='about' smooth={true} duration={500}> About </Link></li>
+                <li><Link to='skills' smooth={true} duration={500}> Skills </Link></li>
+                <li><Link to='work' smooth={true} duration={500}> Work </Link></li>
+                <li><Link to='contact' smooth={true} duration={500}> Contact </Link></li>
             </ul>
 
             <div onClick={handleClick} className='md:hidden z-10'>
@@ -30,11 +31,11 @@ const handleClick = () =>{
             </div>
             
             <ul className= {nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col gap-6 text-4xl justify-center items-center md:hidden'}>  
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Work</li>
-                <li>Contact</li>
+            <li><Link to='home' smooth={true} duration={500}> Home </Link></li>
+                <li><Link onClick={handleClick} to='about' smooth={true} duration={500}> About </Link></li>
+                <li><Link onClick={handleClick} to='skills' smooth={true} duration={500}> Skills </Link></li>
+                <li><Link onClick={handleClick} to='work' smooth={true} duration={500}> Work </Link></li>
+                <li><Link onClick={handleClick} to='contact' smooth={true} duration={500}> Contact </Link></li>
             </ul>
 
             <div className='hidden lg:flex fixed top-[35%] left-0  flex-col'>
