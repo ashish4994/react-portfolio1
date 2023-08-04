@@ -47,10 +47,10 @@ const handleClick = () =>{
                 Github
                 <FaGithub size={30}/>          
             </a>
-            <a className='w-[160px] h-[50px] px-3 flex justify-between items-center text-gray-300 ml-[-100px] hover:ml-0 duration-300 cursor-pointer bg-green-600'>
-                Email
-                <HiOutlineMail size={30}/>          
-            </a>
+            <Link className='w-[160px] h-[50px] px-3 flex justify-between items-center text-gray-300 ml-[-100px] hover:ml-0 duration-300 cursor-pointer bg-green-600' to='contact' smooth={true} duration={500}>
+                 Email
+                <HiOutlineMail size={30}/>   
+            </Link>
             <a className='w-[160px] h-[50px] px-3 flex justify-between items-center text-gray-300 ml-[-100px] hover:ml-0 duration-300 cursor-pointer bg-red-600'>
                 Resume
                 <BsFillPersonLinesFill size={30}/>          
