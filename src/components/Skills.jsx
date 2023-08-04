@@ -11,13 +11,13 @@ import TailWindImage from '../assets/tailwind.png';
 
 function Skills() {
     return (
-        <div name="skills" className='w-full h-screen bg-black text-gray-300'>
+        <div name="skills" className='w-full h-screen text-gray-300'>
          <div className=' flex flex-col p-4 justify-center items-center h-full w-full'>
              <div className='md:text-center'>
                  <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Skills</p>
                  <p className='pt-2'>These are the technologies that I worked on</p>
              </div>
-             <div className=' max-w-[1000px] w-full grid grid-cols-2 sm:grid-cols-4 gap-4 gap-y-6 column  items-center justify-center py-4'>
+             <div className=' max-w-[1000px] w-full grid grid-cols-2 sm:grid-cols-4 gap-4 gap-y-6 column  items-center justify-center py-4 cursor-pointer'>
                 <div className='flex flex-col items-center shadow-md shawdow-[#040c16] hover:scale-110 duration-500'>
                  <img className="w-20 mx-auto" src={HTMLImage} alt='html' size='300'/>
                  <p>HTML</p>

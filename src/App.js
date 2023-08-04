@@ -7,7 +7,7 @@ import Work from './components/Work';
  import Contact from './components/Contact';
 function App() {
   return (
-    <div>
+    <div className='bg-gradient-to-r from-gray-700 via-gray-900 to-black'>
     <Navbar />
     <Hero />
     <About />
